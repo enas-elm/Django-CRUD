@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style/style.css' %}">
+
+
+
+<h1>Update Item</h1>
+
+<form method = "POST" enctype="multipart/form-data">
+
+    <!-- sécurité -->
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Modifier">
+</form>
