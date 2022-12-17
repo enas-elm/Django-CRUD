@@ -7,3 +7,6 @@ class ItemForm(forms.ModelForm):
 
         # les champs à mettre dans le formulaire
         fields = ['name', 'price', 'stock', 'image']
+        
+        def __init__(self):
+            self.fields['image'].required = False

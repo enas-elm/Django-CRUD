@@ -10,11 +10,11 @@
 
 <div class="all-items">
 
-{% for item in items %}
-    <a class="each-item" href="/product/show/{{item.id}}">
-        <img class="img-all" src="/{{ item.image }}" alt="{{ item.name }}">
-        <h2>{{ item.name }}</h2>
-    </a>
-{% endfor %}
+    {% for item in items %}
+        <a class="each-item" href="/product/show/{{item.id}}">
+            <img class="img-all" src="/{{ item.image }}" alt="{{ item.name }}">
+            <h2>{{ item.name }}</h2>
+        </a>
+    {% endfor %}
 
 </div>

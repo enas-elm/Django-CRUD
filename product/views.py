@@ -8,7 +8,7 @@ def create(request):
     # on range ce que veut envoyer ici
     context = {}
  
-    form = ItemForm(request.POST or None)
+    form = ItemForm(request.POST, request.FILES or None)
     if form.is_valid():
         form.save()
         return redirect('product:index')
@@ -62,5 +62,3 @@ def delete(request, id):
     item.delete()
 
     return render(request, 'product/delete.html', context)
-
-# show, delete
