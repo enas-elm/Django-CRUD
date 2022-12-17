@@ -10,3 +10,4 @@ class Item(models.Model):
     # défini le nom de l'instance
     def __str__(self):
         return self.name
+
