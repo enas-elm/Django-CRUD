@@ -7,6 +7,10 @@ A CRUD to manage your stock
 Python
 Django
 
+### Library
+
+Pillow (Python Imaging Library)
+
 ### Launch
 
 #### Create the database:
@@ -16,4 +20,4 @@ Django
 
 #### Then run the server:
 
-    python3 manage.py runserver
+    python3 manage.py runserver (port)
